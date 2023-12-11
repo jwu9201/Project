@@ -63,7 +63,7 @@ void drawShape(int x, double radius) {
     //function is effectively position = (x,y)
     circle.setRadius(radius);
     window.draw(circle);
-    lines[-x-1].position = sf::Vector2f(windowsize / 6  - x*scale-radius*scale, 5 * windowsize / 6 - y*scale-radius*scale);
+    lines[-x-1].position = sf::Vector2f(windowsize / 6  - x * scale - radius*scale, 5 * windowsize / 6 - y*scale - radius * scale);
     lines[-x-1].color = sf::Color::Black;
     int newx = x + 1;
     if (newx < 0) {
